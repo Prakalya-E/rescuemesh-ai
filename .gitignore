@@ -1,0 +1,37 @@
+# Python environments
+.venv/
+.venv-py314/
+
+# Data and model files
+data/
+models/
+
+# Node
+node_modules/
+
+# Python cache and tests
+__pycache__/
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Database and backups
+*.db
+backups/
+
+# Temporary files
+*.bak
+
+# IDE settings
+.idea/
+
+# Reports and temporary outputs
+reports/
+
+# Generated database and model files
+*.sqlite
+*.sqlite3
+*.joblib
