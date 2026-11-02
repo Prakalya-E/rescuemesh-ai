@@ -1,4 +1,4 @@
-﻿"""Tables for live ingestion, model registry and risk assessments.
+"""Tables for live ingestion, model registry and risk assessments.
 Additive only: does not change users / recommendations / audit_log.
 All datetimes are stored as UTC."""
 from datetime import datetime, timezone

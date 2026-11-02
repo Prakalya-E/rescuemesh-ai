@@ -1,4 +1,4 @@
-﻿"""Resumable download of historical FIRMS wildfire CSV chunks."""
+"""Resumable download of historical FIRMS wildfire CSV chunks."""
 import argparse
 import sys
 import time

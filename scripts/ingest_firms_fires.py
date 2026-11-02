@@ -1,4 +1,4 @@
-﻿"""Fetch recent NASA FIRMS fire detections for India and store them in live_observations."""
+"""Fetch recent NASA FIRMS fire detections for India and store them in live_observations."""
 import os
 import sys
 from pathlib import Path

@@ -1,4 +1,4 @@
-﻿"""USGS earthquake feed adapter. Fetching only; database ingestion is separate."""
+"""USGS earthquake feed adapter. Fetching only; database ingestion is separate."""
 from datetime import datetime, timedelta, timezone
 
 import requests

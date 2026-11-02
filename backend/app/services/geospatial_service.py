@@ -1,4 +1,4 @@
-﻿"""Pure-Python geospatial helpers for the API (no GeoPandas needed at request time)."""
+"""Pure-Python geospatial helpers for the API (no GeoPandas needed at request time)."""
 import json
 import math
 from functools import lru_cache

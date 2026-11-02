@@ -1,4 +1,4 @@
-﻿"""All CSV text below is a TEST FIXTURE in the real FIRMS column layout, not live data."""
+"""All CSV text below is a TEST FIXTURE in the real FIRMS column layout, not live data."""
 import pytest
 from backend.app.services import firms_fires as firms
 

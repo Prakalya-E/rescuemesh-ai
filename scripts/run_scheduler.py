@@ -1,4 +1,4 @@
-﻿"""Keeps live data fresh. Leave this window open, or use --once from Windows Task Scheduler / cron.
+"""Keeps live data fresh. Leave this window open, or use --once from Windows Task Scheduler / cron.
     run_scheduler.py                 USGS every 30 min, FIRMS every 120 min
     run_scheduler.py --once          refresh everything once, then exit"""
 import argparse

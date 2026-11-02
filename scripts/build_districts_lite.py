@@ -1,4 +1,4 @@
-﻿"""One-off: light district boundaries for fast lat/lon -> district lookup in the API (the source file is 168 MB)."""
+"""One-off: light district boundaries for fast lat/lon -> district lookup in the API (the source file is 168 MB)."""
 import sys
 from pathlib import Path
 

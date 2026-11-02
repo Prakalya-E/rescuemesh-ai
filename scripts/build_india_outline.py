@@ -1,4 +1,4 @@
-﻿"""One-off: build a light India outline from your state boundaries, for point-in-polygon filtering."""
+"""One-off: build a light India outline from your state boundaries, for point-in-polygon filtering."""
 import sys
 from pathlib import Path
 import geopandas as gpd

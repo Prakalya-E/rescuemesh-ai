@@ -1,4 +1,4 @@
-﻿"""Data-access helpers: validation, duplicate-safe inserts, source health."""
+"""Data-access helpers: validation, duplicate-safe inserts, source health."""
 import math
 from datetime import datetime, timedelta, timezone
 from sqlalchemy import func, select

@@ -1,4 +1,4 @@
-﻿"""Create any MISSING tables (existing tables and data are untouched) and seed source metadata."""
+"""Create any MISSING tables (existing tables and data are untouched) and seed source metadata."""
 import os, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent

@@ -1,4 +1,4 @@
-﻿"""Fetch recent USGS earthquakes and store them in the live-observation tables."""
+"""Fetch recent USGS earthquakes and store them in the live-observation tables."""
 import os
 import sys
 from pathlib import Path

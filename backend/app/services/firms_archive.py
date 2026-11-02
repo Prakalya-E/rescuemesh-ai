@@ -1,4 +1,4 @@
-﻿"""Historical FIRMS archive downloads. Raw CSV chunks only."""
+"""Historical FIRMS archive downloads. Raw CSV chunks only."""
 import csv
 import io
 from datetime import date, timedelta

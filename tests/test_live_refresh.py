@@ -1,4 +1,4 @@
-﻿import types
+import types
 import pytest
 from fastapi.testclient import TestClient
 from backend.app.database import get_db

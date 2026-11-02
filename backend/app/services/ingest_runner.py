@@ -1,4 +1,4 @@
-﻿"""One ingestion cycle per source, shared by POST /live/refresh and scripts/run_scheduler.py.
+"""One ingestion cycle per source, shared by POST /live/refresh and scripts/run_scheduler.py.
 Every cycle writes an ingestion_runs row. A failing source never stops the others and never removes old data."""
 from .. import repositories as repo
 from ..config import settings

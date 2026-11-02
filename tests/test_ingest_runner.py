@@ -1,4 +1,4 @@
-﻿"""No network: every fetch function below is a fake."""
+"""No network: every fetch function below is a fake."""
 from datetime import datetime, timedelta, timezone
 import pytest
 from backend.app import repositories as repo

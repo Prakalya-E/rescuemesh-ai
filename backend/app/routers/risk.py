@@ -1,4 +1,4 @@
-﻿"""Risk assessment for a point location. Authenticated like the other routers."""
+"""Risk assessment for a point location. Authenticated like the other routers."""
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session

@@ -1,4 +1,4 @@
-﻿"""Authenticated API for ingested live observations."""
+"""Authenticated API for ingested live observations."""
 from datetime import datetime, timezone
 
 from fastapi import APIRouter, Depends, Query

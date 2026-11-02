@@ -1,4 +1,4 @@
-﻿"""Fixtures only. No network access."""
+"""Fixtures only. No network access."""
 from datetime import date
 import pytest
 from backend.app.services import firms_archive as fa

@@ -1,4 +1,4 @@
-﻿"""NASA FIRMS active-fire adapter (area CSV API). Fetching and parsing only; storage is separate.
+"""NASA FIRMS active-fire adapter (area CSV API). Fetching and parsing only; storage is separate.
 Needs FIRMS_MAP_KEY. Records are satellite thermal detections: NOT confirmed wildfires, NOT warnings."""
 import csv
 import io

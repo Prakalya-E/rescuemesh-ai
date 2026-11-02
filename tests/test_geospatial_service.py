@@ -1,4 +1,4 @@
-﻿import json
+import json
 import pytest
 from backend.app.services.geospatial_service import DistrictLocator, haversine_km
 

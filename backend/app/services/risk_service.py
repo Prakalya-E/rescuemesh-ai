@@ -1,4 +1,4 @@
-﻿"""Risk lookup and prioritisation for one location.
+"""Risk lookup and prioritisation for one location.
 
 HOW TO READ THE OUTPUT (these rules are project heuristics, NOT official warnings or probabilities):
 * static_profile: per-hazard scores for the district. Scores are RELATIVE RANKS across India's 733 districts.
