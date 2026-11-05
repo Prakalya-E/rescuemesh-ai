@@ -1,12 +1,21 @@
-services:
+﻿services:
   db:
     image: pgvector/pgvector:pg16
     container_name: rescuemesh-db
+    restart: unless-stopped
     environment:
       POSTGRES_USER: rescue
-      POSTGRES_PASSWORD: rescue_pw
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD must be set in .env}
       POSTGRES_DB: rescuemesh
-    ports: ["5432:5432"]
-    volumes: ["pgdata:/var/lib/postgresql/data"]
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rescue -d rescuemesh"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
 volumes:
   pgdata:
