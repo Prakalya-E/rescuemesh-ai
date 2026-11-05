@@ -5,7 +5,8 @@ from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 
 from ..database import get_db
-from ..security import current_user
+from ..roles import COORDINATOR
+from ..security import current_user, require_roles
 from .. import repositories as repo
 from ..services.usgs_earthquakes import fetch_recent_earthquakes
 
@@ -97,8 +98,8 @@ from ..security import require_roles
 
 @router.post("/refresh")
 def refresh_live_data(source: str = Query("all", pattern="^(all|usgs|firms)$"),
-                      user=Depends(require_roles("admin")), db: Session = Depends(get_db)):
-    """Admin only: fetch fresh data now. Blocks until finished (typically 10-60 seconds)."""
+                      user=Depends(require_roles(COORDINATOR)), db: Session = Depends(get_db)):
+    """Coordinator only: fetch fresh data now. Blocks until finished (typically 10-60 seconds)."""
     from ..services import ingest_runner
     keys = ("usgs", "firms") if source == "all" else (source,)
     return {"results": [ingest_runner.run_by_key(db, k) for k in keys]}
